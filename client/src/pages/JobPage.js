@@ -2,7 +2,6 @@ import { useState, useEffect } from 'react';
 import { useParams } from 'react-router';
 import { Link } from 'react-router-dom';
 import { formatDate } from '../lib/formatters';
-import { jobs } from '../lib/fake-data';
 import { getJob } from '../lib/graphql/queries.js';
 
 function JobPage() {
@@ -13,7 +12,6 @@ function JobPage() {
       },[jobId]);
 
   console.log('[JobPage] job : ', job);
-//  const job = jobs.find((job) => job.id === jobId);
   if (!job){
     return <div>Loading...</div>;
   }

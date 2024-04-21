@@ -1,6 +1,5 @@
 import { useState, useEffect } from 'react';
 import JobList from '../components/JobList';
-//import { jobs } from '../lib/fake-data';
 import { getJobs } from '../lib/graphql/queries.js';
 
 getJobs().then((jobs) => console.log('jobs : ', jobs));
