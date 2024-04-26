@@ -12,6 +12,7 @@ function JobPage() {
       },[jobId]);
 
   console.log('[JobPage] job : ', job);
+
   if (!job){
     return <div>Loading...</div>;
   }
